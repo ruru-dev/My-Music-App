@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+  padding-top: 200px;
+}
+
+.login-button {
+  margin: 15px auto 0 auto;
+}
