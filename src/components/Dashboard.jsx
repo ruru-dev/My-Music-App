@@ -6,6 +6,7 @@ import {
   MenuItem,
   Snackbar,
   IconButton,
+  Box,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import BasicCard from "./BasicCard";
@@ -110,8 +111,13 @@ function Dashboard() {
   ];
 
   return (
-    <div className="Dashboard">
+    <div className="dashboard">
       {/* This starts our javascript code. */}
+      <div className="music-image-container">
+        <img id="music-image" src="images/music.jpg" alt="Image not found" height="300px" width="300px"/>
+      </div>
+      
+      <div className="dashboard-cards">
       {
         // Maps over every element in the cards array.
         cards.map(
@@ -123,6 +129,8 @@ function Dashboard() {
           }
         )
       }
+      </div>
+
       <Snackbar
         open={notifications[0]}
         message={notifications[0]}
